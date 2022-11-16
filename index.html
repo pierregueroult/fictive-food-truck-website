@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Base Head -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TODO: ajouter un icon -->
+    <title>Accueil - C'est rien bon !</title>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="./dist/styles/global/footer.css" />
+    <link rel="stylesheet" href="./dist/styles/global/header.css" />
+    <link rel="stylesheet" href="./dist/styles/global/variables.css" />
+    <!-- SEO -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html" class="image-link">
+          <img src="./dist/images/logo.svg" alt="Logo" />
+        </a>
+        <ul>
+          <li><a href="./index.html" class="current">Accueil</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./location.html">Localisation</a></li>
+          <li><a href="./about.html">A propos</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main></main>
+    <footer>
+      <section>
+        <div class="left-container">
+          <h2>Parce qu’on aime tous le normand</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Sommaire</th>
+                <th></th>
+                <th>Informations</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="./index.html">Accueil</a></td>
+                <td><a href="./menu.html">Menu</a></td>
+                <td>
+                  <a
+                    href="https://pierregueroult.dev/documents/terms_of_use.pdf"
+                    target="_blank"
+                  >
+                    Conditions d'usage
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href="https://pierregueroult.dev/documents/privacy_policy.pdf"
+                    target="_blank"
+                    >Mentions Légales</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><a href="./location.html">Localisation</a></td>
+                <td><a href="./about.html">A propos</a></td>
+                <td>
+                  <a href="./documents/graphic_chart.pdf" target="_blank"
+                    >Charte Graphique</a
+                  >
+                </td>
+                <td>
+                  <a href="./documents/SAE105.pdf" target="_blank">Le Projet</a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="./contact.html">Contact</a></td>
+                <td></td>
+                <td>
+                  <a href="https://pierregueroult.dev" target="_blank">
+                    Le développeur
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="right-container">
+          <form action="https://formspree.io/f/xvoyllon" method="POST">
+            <h2>Nous envoyer un message :</h2>
+            <ul>
+              <li>
+                <label for="content">Message :</label>
+                <textarea
+                  type="text"
+                  name="content"
+                  id="content"
+                  rows="2"
+                  placeholder="Je souhaite ..."
+                  required
+                  tabindex="1"
+                ></textarea>
+              </li>
+              <li>
+                <label for="telephone">Télephone :</label>
+                <input
+                  type="tel"
+                  name="telephone"
+                  id="telephone"
+                  placeholder="06 ..."
+                  required
+                  tabindex="2"
+                />
+              </li>
+            </ul>
+            <button type="submit" tabindex="3">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

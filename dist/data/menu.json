@@ -1,0 +1,108 @@
+{
+  "dishes": {
+    "fr": [
+      {
+        "name": "Salade Normande",
+        "description": "",
+        "price": 12,
+        "ingredients": [
+          "Salade de Saison",
+          "Camembert Normand",
+          "Pommes",
+          "Cerneaux de Noix"
+        ]
+      },
+      {
+        "name": "\"Calendos\" Escalope",
+        "price": 10,
+        "description": "",
+        "ingredients": [
+          "Camembert Normand",
+          "Escalope de Dinde/Poulet",
+          "Crème Fraiche Normande"
+        ]
+      },
+      {
+        "name": "Escalope à la Normande",
+        "price": 10,
+        "description": "",
+        "ingredients": [
+          "Escalope de Porc",
+          "Calvados/Eaux de Vie",
+          "Champignon de Saison",
+          "Crème Fraiche Normande"
+        ]
+      }
+    ],
+    "en": [
+      {
+        "name": "Norman Salad",
+        "price": 12,
+        "description": "",
+        "ingredients": [
+          "Seanonal salad",
+          "Norman Camembert",
+          "Apples",
+          "Walnut Kernels"
+        ]
+      },
+      {
+        "name": "\"Calendos\" Cutlet",
+        "price": 10,
+        "description": "",
+        "ingredients": [
+          "Norman Camembert",
+          "Chicken/Turkey Cutlet",
+          "Normandy Fresh Cream"
+        ]
+      },
+      {
+        "name": "Norman Cutlet",
+        "description": "",
+        "price": 10,
+        "ingredients": [
+          "Pork Cutlet",
+          "Calvados/Brandies",
+          "Seasonal Mushroom",
+          "Normandy Fresh Cream"
+        ]
+      }
+    ]
+  },
+  "specialities": {
+    "fr": [
+      {
+        "name": "\"Le trou Normand\"",
+        "description": "",
+        "price": 4,
+        "ingredients": ["Sorbet à la Pomme", "Calvados/Eaux de Vie"]
+      }
+    ],
+    "en": [
+      {
+        "name": "\"Le trou Normand\"",
+        "description": "",
+        "price": 4,
+        "ingredients": ["Apple sorbet", "Calvados/Brandies"]
+      }
+    ]
+  },
+  "dessert": {
+    "fr": [
+      {
+        "name": "Le Teurgoule",
+        "description": "",
+        "price": 6,
+        "ingredients": ["Riz Rond", "Lait", "Cannelle", "Sucre Blanc"]
+      }
+    ],
+    "en": [
+      {
+        "name": "The Teurgoule",
+        "description": "",
+        "price": 6,
+        "ingredients": ["Round Rice", "Milk", "Cinnamon", "Sugar"]
+      }
+    ]
+  }
+}
