@@ -47,5 +47,14 @@ header a.current::after {
   width: 100%;
 }
 header a.current::after {
-  background-color: var(--flag-yellow);
+  animation: headerAfterTransition 400ms ease-in-out forwards;
+}
+
+@keyframes headerAfterTransition {
+  from {
+    background-color: var(--flag-red);
+  }
+  to {
+    background-color: var(--flag-yellow);
+  }
 }
