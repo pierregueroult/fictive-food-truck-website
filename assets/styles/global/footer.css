@@ -1,138 +1,135 @@
 footer {
+  height: 350px;
   background-color: var(--back-black);
   overflow: hidden;
 }
-footer,
+
 footer section {
-  width: 100vw;
-}
-footer,
-footer section,
-footer .left-contaer,
-footer .right-container {
-  height: 250px;
-}
-footer section {
-  max-width: 1400px;
   margin: 0 auto;
+  width: 100vw;
+  max-width: 1400px;
+  height: 100%;
 }
-footer .left-container,
-footer .right-container {
+
+footer section aside {
   float: left;
-}
-footer .left-container {
-  width: 60%;
-}
-
-footer > div {
-  padding: 1rem 2rem;
+  width: 180px;
+  background-color: var(--flag-red);
+  height: 180px;
+  margin: 65px 0;
+  border-radius: 50%;
 }
 
-footer .left-container,
-footer form,
-footer td a,
-footer input,
-footer textarea,
-footer button {
+footer section aside img {
+  width: 100%;
+  height: 100%;
+}
+footer section article {
+  height: 350px;
+  float: right;
+  width: calc(100% - 285px);
   color: var(--pure-white);
 }
 
-footer .left-container h2 {
-  font-family: "Young Blood";
-  font-size: 4rem;
-  color: var(--flag-yellow);
-}
-
-footer .right-container {
-  width: 40%;
-}
-
-footer th {
-  font-family: "Source Sans Pro Bold";
-  font-size: 1.4rem;
-}
-footer th:not(:empty)::before {
-  content: "-";
-  color: var(--flag-red);
-  margin-right: 5px;
-}
-footer td {
-  font-family: "Source Sans Pro";
-  font-size: 1.1rem;
-  padding: 0.5rem 1.5rem 0rem 1.5rem;
-  padding-top: 0.5rem;
-}
-footer td a {
-  text-decoration: none;
-}
-footer td a:hover {
-  text-decoration: underline;
-}
-
-footer form {
-  height: 100%;
-  font-family: "Source Sans Pro";
-}
-
-footer form h2 {
-  font-family: "Source Sans Pro Bold";
-  padding: 1.3rem 0.5rem 0.5rem 1rem;
-  font-size: 1.6rem;
-}
-
-footer .right-container ul {
-  width: 100%;
-  background-color: green;
-  list-style: none;
-}
-
-footer .right-container li {
-  position: relative;
+footer article table,
+footer article form {
   float: left;
+  margin-top: 30px;
 }
-footer .right-container li:first-of-type {
-  width: 60%;
-}
-footer .right-container li:last-of-type {
-  margin-left: 10%;
-  width: 30%;
+footer article table th {
+  font-family: "Oswald";
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  text-align: left;
 }
 
-footer input,
-footer textarea {
-  resize: none;
-  outline: none;
-  font-family: "Source Sans pro";
-  border: var(--flag-yellow) 2px solid;
-  margin-top: 2.5rem;
+footer article table td {
+  font-family: "Oswald";
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+footer article table:first-of-type td {
+  padding-right: 6rem;
+}
+
+footer article table td a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  border-radius: 1px;
+  left: 0;
+  bottom: 0;
+  transition: width 200ms ease-in-out;
+  background-color: var(--flag-red);
+}
+
+footer article table:last-of-type td a::before {
+  background-color: var(--flag-yellow);
+}
+footer article table:last-of-type {
+  margin-left: 6rem;
+}
+
+footer article table td a:hover::before {
   width: 100%;
-  padding: 0.5rem;
+}
+
+footer article table td a {
+  color: var(--pure-white);
+  text-decoration: none;
+  position: relative;
+}
+
+footer article table td i {
+  font-size: 0.8rem;
+  position: relative;
+  bottom: 4px;
+  margin-right: 4px;
+}
+footer article h3 {
+  font-family: "Oswald";
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  text-align: left;
+}
+
+footer article .form-container {
+  font-family: "Oswald";
+  font-weight: 500;
   font-size: 1.2rem;
 }
-footer input {
-  height: 35px;
-}
-footer textarea {
-  height: 105px;
-}
-footer label {
-  position: absolute;
-  font-size: 1.4rem;
-}
-footer button {
-  padding: 0.5rem 1rem;
-  border: 3px var(--flag-red) solid;
-  position: relative;
-  font-size: 1.3rem;
-  font-family: "Source Sans Pro Bold";
-  width: 30%;
-  top: 1.4rem;
-  left: 10%;
+footer article button {
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  background-color: var(--flag-red);
+  color: var(--pure-white);
+  margin-top: 1.2rem;
   cursor: pointer;
 }
-footer input,
-footer textarea,
-footer button {
+
+footer article form input,
+footer article form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
   background-color: transparent;
-  border-radius: 4px;
+  border-bottom: 2px solid var(--pure-white);
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 1.2rem;
+  resize: none;
+  color: var(--pure-white);
+  transition: border 200ms ease-in-out;
+}
+
+footer article form input:valid,
+footer article form textarea:valid {
+  border-bottom: var(--flag-yellow) solid 2px;
 }

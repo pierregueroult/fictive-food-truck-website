@@ -1,51 +1,126 @@
-#index-section1 {
-  padding: 3rem 2rem;
+section {
+  height: 60vh;
 }
 
-#index-section1 > h1 {
-  font-family: "YoungBlood", cursive;
-  text-align: center;
-  width: 100%;
-  font-size: 3.5rem;
-  color: var(--flag-red);
-}
-#index-section1 > p {
-  text-align: center;
-  width: 100%;
-  font-family: "Source Sans Pro Bold";
-  font-size: 1.3rem;
-  margin-top: 1rem;
+section:first-of-type {
+  background-color: var(--back-black);
+  height: auto;
 }
 
-#index-section1 .image-container {
-  width: 100vw;
-  max-width: 1300px;
-  margin: 1.5rem auto;
-  height: 700px;
-  overflow: hidden;
-  background-color: blue;
-  position: relative;
-}
-#index-section1 article {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-#index-section1 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: filter 200ms ease-in-out;
-}
-#index-section1 img:hover {
+main section:last-of-type {
+  margin-bottom: 5rem;
 }
 
-#index-section1 aside {
-  position: absolute;
-  background-color: rgba(125, 125, 125, 0.5);
-  top: 1rem;
-  left: 1rem;
-  z-index: 5;
-  height: 150px;
+.section-content {
+  margin: 0 auto;
+  width: 37%;
+}
+.section-content img {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin: 5rem 0 3rem 0;
+}
+
+.section-content div {
+  font-family: "Oswald";
+  font-size: 1.2rem;
+  float: left;
+  margin: 8rem 0 3rem 0;
+}
+.section-content p {
   width: 400px;
+}
+
+.section-content {
+  color: var(--pure-white);
+}
+
+.section-content h3 {
+  font-size: 4rem;
+}
+
+.section-text {
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 1.7rem;
+}
+
+.section-left {
+  width: 30%;
+  margin-left: 17.5%;
+  float: left;
+  margin-right: 2.5%;
+  margin-top: 100px;
+}
+
+.section-right {
+  width: 30%;
+  margin-left: 2.5%;
+  margin-right: 17.5%;
+  margin-top: 100px;
+  float: right;
+}
+.section-text h2 {
+  font-family: "Lemon Jelly";
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.section-text a {
+  border: 2px solid var(--flag-red);
+  color: var(--flag-red);
+  text-decoration: none;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: var(--pure-white);
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+  position: relative;
+  top: 2rem;
+}
+.section-text a:hover {
+  color: var(--pure-white);
+  background-color: var(--flag-red);
+}
+
+.marquee {
+  height: 80px;
+  clear: both;
+  width: 100vw;
+}
+
+.marquee .container {
+  position: relative;
+  width: 100vw;
+}
+
+.marquee .container p {
+  color: white;
+  font-size: 2.35rem;
+  font-family: "Oswald";
+  white-space: nowrap;
+  line-height: 80px;
+  position: absolute;
+  user-select: none;
+}
+
+.marquee .container p:first-of-type {
+  animation: marqueeAnimation 30000ms linear infinite;
+}
+.marquee .container p:last-of-type {
+  animation: marqueeAnimation 30000ms 15000ms linear infinite;
+  opacity: 0;
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(-110%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100vw);
+    opacity: 1;
+  }
 }

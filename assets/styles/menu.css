@@ -1,0 +1,257 @@
+#main-section {
+  max-width: 1350px;
+  width: 100vw;
+  margin: 0 auto;
+  margin-top: 4rem;
+  position: relative;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-size: 5.5rem;
+  width: 40%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.title {
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  border-radius: 2px;
+  background-color: var(--flag-red);
+}
+
+.title ul {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0;
+}
+
+.title button {
+  cursor: pointer;
+}
+
+.title ul li {
+  float: right;
+  list-style: none;
+  height: 50px;
+  width: 50px;
+  background-color: var(--flag-red);
+  margin: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.title ul li i {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: var(--pure-white);
+  line-height: 50px;
+  font-size: 1.3rem;
+}
+
+.title ul li.selected i {
+  color: var(--flag-yellow);
+}
+
+.title ul li:last-of-type {
+  background-color: transparent;
+  border: 2px solid var(--pure-black);
+}
+
+.title ul li * {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  outline: none;
+}
+
+#changeLanguage img {
+  width: 70%;
+  object-fit: contain;
+}
+
+#main-section section {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#menuElements {
+  width: max-content;
+  margin-top: 0.5rem;
+}
+
+#menuElements article {
+  float: left;
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+  margin: 2rem 2.5rem;
+  position: relative;
+  transition: transform 100ms ease-in-out;
+  border-radius: 5px;
+  background-color: var(--pure-white);
+  cursor: pointer;
+}
+
+#menuElements article:hover {
+  transform: scale(102%);
+}
+
+#menuElements article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#menuElements article h2 {
+  position: absolute;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-family: "Lemon Jelly";
+  font-weight: 500;
+  font-size: 3.5rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--pure-white);
+}
+
+#menuElements article h2::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--flag-red);
+}
+
+#menuElements article:first-of-type {
+  margin-left: 0;
+}
+
+#menuElements article:last-of-type {
+  margin-right: 0;
+}
+
+/*  */
+
+#menuElement {
+  max-width: 1200px;
+  width: 100vw;
+  height: 675px;
+  margin: 3rem auto;
+  background-color: var(--back-white);
+  position: relative;
+}
+
+#menuElement .no-selection {
+  line-height: 675px;
+  text-align: center;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+#menuElement img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+#menuElement ul {
+  position: absolute;
+  left: 5%;
+  bottom: 50px;
+  height: 70px;
+  width: 90%;
+  background-color: var(--pure-white);
+  z-index: 3;
+}
+
+#menuElement ul::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--flag-red);
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+
+#menuElement ul li {
+  margin: 0 1rem;
+  line-height: 70px;
+  float: left;
+  list-style: none;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+#menuElement ul li::before {
+  content: "#";
+}
+
+#menuElement div {
+  position: absolute;
+  right: 60px;
+  background-color: var(--pure-white);
+  bottom: 180px;
+  width: 400px;
+  top: 300px;
+  z-index: 5;
+}
+
+#menuElement div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: -2px;
+  left: 0;
+  border-radius: 2px;
+  background-color: var(--flag-red);
+}
+
+#menuElement div h2 {
+  font-family: "Lemon Jelly";
+  font-weight: 400;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+#menuElement div p:first-of-type {
+  position: absolute;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 1.8rem;
+  right: 20px;
+  top: 20px;
+}
+
+#menuElement div p:last-of-type {
+  padding: 0 1.5rem;
+  font-family: "Oswald";
+  font-weight: 400;
+}

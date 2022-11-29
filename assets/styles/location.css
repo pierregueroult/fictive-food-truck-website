@@ -1,0 +1,111 @@
+main {
+  height: calc(100vh - 100px);
+  min-height: auto;
+  overflow: hidden;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+}
+
+aside {
+  width: 19vw;
+  height: 100%;
+  background-color: var(--back-white);
+  float: left;
+  overflow-y: scroll;
+  position: relative;
+}
+
+aside h1 {
+  font-size: 2.5rem;
+  line-height: 120%;
+  padding: 1rem;
+  font-family: "Oswald";
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+aside h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: var(--flag-red);
+  height: 3px;
+  width: 80%;
+  left: 10%;
+  border-radius: 2px;
+}
+article {
+  width: 81vw;
+  height: 100%;
+  background-color: var(--pure-white);
+  float: right;
+}
+
+#locations li {
+  font-family: "Oswald";
+  padding: 1rem;
+  position: relative;
+}
+
+#locations li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: var(--flag-yellow);
+  height: 3px;
+  width: 70%;
+  left: 15%;
+  border-radius: 2px;
+}
+
+#locations li:last-of-type::after {
+  display: none;
+}
+
+#locations h3 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+#locations p {
+  font-size: 1.1rem;
+}
+#locations p.location {
+  text-decoration: underline;
+}
+
+#locations p.day,
+#locations p.hour {
+  display: inline;
+}
+#locations p.day::after {
+  content: " - ";
+}
+
+#locations button {
+  cursor: pointer;
+  display: block;
+  margin: 1rem auto 0 auto;
+  border: var(--flag-red) 3px solid;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-family: "Oswald";
+  background-color: var(--pure-white);
+  padding: 0 0.5rem;
+}
+
+main article iframe {
+  width: 100%;
+  height: 100%;
+}
+main article p {
+  line-height: calc(100vh - 100px);
+  font-family: "Oswald";
+  text-align: center;
+  font-size: 2rem;
+  user-select: none;
+}

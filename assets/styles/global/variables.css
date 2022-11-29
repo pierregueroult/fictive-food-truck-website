@@ -19,29 +19,22 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 img {
   user-select: none;
   -webkit-user-drag: none;
 }
 main {
-  min-height: calc(100vh - 360px);
+  min-height: 100vh;
 }
 
 /* ! FONT FACE IMPORT */
 @font-face {
-  font-family: "Source Sans Pro Black";
-  src: url(../../fonts/SourceSansPro-Black.ttf);
+  font-family: "Oswald";
+  src: url(../../fonts/Oswald-VariableFont_wght.ttf);
 }
 @font-face {
-  font-family: "Source Sans Pro Bold";
-  src: url(../../fonts/SourceSansPro-Bold.ttf);
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  src: url(../../fonts/SourceSansPro-Regular.ttf);
-}
-@font-face {
-  font-family: "Young Blood";
-  src: url(../../fonts/YoungBlood.ttf);
+  font-family: "Lemon Jelly";
+  src: url(../../fonts/LemonJellyPersonalUse.ttf);
 }
