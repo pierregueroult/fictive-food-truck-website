@@ -1,0 +1,115 @@
+main {
+  min-height: auto;
+  height: calc(100vh - 100px);
+}
+
+section {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.left,
+.right {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+
+form {
+  float: right;
+  height: 50%;
+  margin: 25% 2rem;
+  color: var(--pure-black);
+}
+
+.wrapper {
+  float: left;
+  height: 50%;
+  margin: 25% 2rem;
+}
+
+.right .social-media {
+  margin: 1rem 0;
+}
+.right .social-media li {
+  display: inline;
+  margin-inline: 10%;
+  font-size: 3rem;
+  text-align: center;
+  width: 15%;
+}
+
+.right .social-media li a {
+  color: var(--flag-red);
+  transition: color 200ms ease-in-out;
+}
+.right .social-media li a:hover {
+  color: var(--flag-yellow);
+}
+
+form h3,
+.right h3 {
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.right h3 {
+  text-align: left;
+}
+
+button {
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  background-color: var(--flag-red);
+  color: var(--pure-white);
+  cursor: pointer;
+  width: 90%;
+  margin: 2rem 5%;
+  border: none;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 2px solid var(--pure-black);
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 1.2rem;
+  resize: none;
+  color: var(--pure-black);
+  transition: border 200ms ease-in-out;
+  font-size: 1.8rem;
+}
+
+.form-container {
+  margin-top: 2rem;
+}
+form label {
+  font-family: "Oswald";
+  font-size: 2.2rem;
+}
+
+form input:valid,
+form textarea:valid {
+  border-bottom: var(--flag-yellow) solid 2px;
+}
+
+.right .wrapper p a {
+  line-height: 2rem;
+  font-size: 1.5rem;
+  font-family: "Oswald";
+  color: var(--pure-black);
+}
+
+.right .wrapper p:first-of-type {
+  margin-top: 1rem;
+}
