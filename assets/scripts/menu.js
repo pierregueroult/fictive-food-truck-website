@@ -11,7 +11,6 @@ var currentFilter = {
   specialty: false,
   dessert: false,
 };
-
 var currentExposedElement = 0;
 
 function changeButtonImage(lang) {
@@ -21,15 +20,11 @@ function changeButtonImage(lang) {
       : '<img src="./assets/images/flag-france.png" alt="drapeau francais"/>';
 }
 
-// cette fonction inverse le langage de la page
 function swapCurrentLanguage() {
   currentLanguage == "fr" ? (currentLanguage = "en") : (currentLanguage = "fr");
 }
 
-// cette fonction change le menu stocké dans
-// le localStorage en fonction des filtres appliqués
 function updateMenuLocalStorage() {
-  // on met tous les éléments selectionnés dans la même liste
   var elementsList = [];
   if (
     !currentFilter.dishes &&
@@ -55,7 +50,6 @@ function updateMenuLocalStorage() {
   localStorage.setItem("menuCurrentItems", JSON.stringify(elementsList));
 }
 
-// cette fonction crée un article suivant les paramètres
 function createMenuElement(name, img, id) {
   var titleElement = document.createElement("h2");
   titleElement.innerText = name;
@@ -70,8 +64,6 @@ function createMenuElement(name, img, id) {
   menuElementsSection.appendChild(container);
 }
 
-// cette fonction lance la création d'un article pour
-// chaque éléments dans le localStorage
 function updateHtmlContent() {
   var content = JSON.parse(localStorage.getItem("menuCurrentItems"));
   menuElementsSection.innerHTML = "";
@@ -80,8 +72,6 @@ function updateHtmlContent() {
   });
 }
 
-// cette fonction prend en charge le changement de langage
-// et relance la génération des articles
 function changeLanguage() {
   swapCurrentLanguage();
   changeButtonImage();
@@ -95,8 +85,6 @@ function changeLanguage() {
   updateCurrentExposedElement();
 }
 
-// prise en charge des cliques sur les li qui servent de bouton
-// pour les filtres
 elementFilterButtons.forEach((value) => {
   value.onclick = function () {
     if (currentFilter[value.attributes.content.value] == true) {

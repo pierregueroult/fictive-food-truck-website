@@ -106,3 +106,18 @@ h1 {
   left: 10%;
   background-color: var(--flag-red);
 }
+
+#toUp {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  height: 4rem;
+  width: 4rem;
+  background-color: var(--flag-red);
+  text-align: center;
+  line-height: 4rem;
+  color: var(--pure-white);
+  font-size: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
